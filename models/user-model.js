@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const userSchema = mongoose.Schema({
-    fulname: {
+    fullname: {
         type: String,
         required: true,
     },
@@ -14,18 +14,13 @@ const userSchema = mongoose.Schema({
 
     password: {
         type: String,
-        required: true,
+        // required: true,
         trim: true,
     },
 
     cart: {
         type: Array,
         default: [],
-    },
-
-    isadmin: {
-        type: Boolean,
-        default: false,
     },
 
     orders: {
@@ -35,12 +30,12 @@ const userSchema = mongoose.Schema({
 
     contact: {
         type: Number,
-        required: true,
+        // required: true,
     },
 
     picture: {
         type: String,
-        required: true,
+        // required: true,
     },
 
 })
