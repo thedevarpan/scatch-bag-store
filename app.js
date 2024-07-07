@@ -20,4 +20,5 @@ app.use("/owners", ownersRouter);
 app.use("/users", usersRouter);
 app.use("/products", productsRouter);
 
+// $env:DEBUG="development:mongoose"; npx nodemon app.js
 app.listen(3000);
