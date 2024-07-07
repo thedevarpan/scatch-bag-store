@@ -3,18 +3,18 @@ const mongoose = require('mongoose');
 const ownerSchema = mongoose.Schema({
     fulname: {
         type: String,
-        required: true,
+        // required: true,
     },
 
     email: {
         type: String,
-        required: true,
+        // required: true,
         trim: true,
     },
 
     password: {
         type: String,
-        required: true,
+        // required: true,
         trim: true,
     },
 
@@ -25,7 +25,7 @@ const ownerSchema = mongoose.Schema({
 
     picture: {
         type: String,
-        required: true,
+        // required: true,
     },
 
     gstin: String,
